@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6082b3b653f69b4bc1378a5897c1dc6c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0a0063f14e87237348a3db0020d9102a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Flocation%20%3FlocationLabel%20%3Flatitude%20%3Flongitude%20%3Fgeo%20WHERE%20%7B%0A%20%20VALUES%20%3Ftype%20%7B%20wd%3AQ1007870%20wd%3AQ33506%20wd%3AQ166118%20wd%3AQ2668072%20wd%3AQ667276%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20wd%3AQ464980%20wd%3AQ56190453%20%7D%0A%20%20%23art%20gallery%2C%20museum%2C%20archive%2C%20collection%2C%20art%20exhibition%2C%20%0A%20%20%23%20exhibition%2C%20memorial%0A%20%20%0A%20%20VALUES%20%3Fplaces%20%7B%20wd%3AQ1715%20%7D%20%0A%0A%20%20%23%20Find%20locations%20that%20match%20%3Fplaces%20directly%20OR%20one%20level%20above%2Fbelow%0A%20%20%3Fplace%20%28wdt%3AP131%7C%5Ewdt%3AP131%29%20%3Fplaces.%20%0A%0A%20%20%23%20Find%20items%20that%20are%20in%20those%20locations%0A%20%20%3Fitem%20wdt%3AP31%20%3Ftype%3B%20%20%23%20Must%20be%20an%20instance%20of%20a%20relevant%20cultural%20type%0A%20%20%20%20%20%20%20%20wdt%3AP276%7Cwdt%3AP131%20%3Fplace.%20%20%23%20Located%20in%20one%20of%20the%20places%0A%20%20%0A%20%20%3Fitem%20wdt%3AP625%20%3Fgeo.%20%20%23%20Get%20coordinates%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2C%5BAUTO_LANGUAGE%5D%22.%20%7D%0A%0A%20%20BIND%28geof%3Alatitude%28%3Fgeo%29%20AS%20%3Flatitude%29.%0A%20%20BIND%28geof%3Alongitude%28%3Fgeo%29%20AS%20%3Flongitude%29%0A%7D">Wikidata Link</a></p>
+<p><a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Flocation%20%3FlocationLabel%20%3Flatitude%20%3Flongitude%20%3Fgeo%20WHERE%20%7B%0A%0A%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ700216%3B%20%23%20Teil%20von%20Staatliche%20Museen%20zu%20Berlin%0A%20%20%20%20%20%20%20%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ33506.%20%23%20ist%20ein%2Fist%20eine%20Unterklasse%20von%3A%20Museum%0A%20%20%0A%20%20%3Fitem%20wdt%3AP625%20%3Fgeo.%20%20%23%20Get%20coordinates%0A%20%20%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2C%5BAUTO_LANGUAGE%5D%22.%20%7D%0A%0A%20%20BIND%28geof%3Alatitude%28%3Fgeo%29%20AS%20%3Flatitude%29.%0A%20%20BIND%28geof%3Alongitude%28%3Fgeo%29%20AS%20%3Flongitude%29%0A%7D%0A">Wikidata Link</a></p>
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
 <head>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_dbecd503adb9f08ecbfb86cb10f9a0dc {
+                #map_0164d09571f1b2cea379a47a66577f2e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -153,14 +153,14 @@ ul.task-list li input[type="checkbox"] {
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_dbecd503adb9f08ecbfb86cb10f9a0dc&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_0164d09571f1b2cea379a47a66577f2e&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_dbecd503adb9f08ecbfb86cb10f9a0dc = L.map(
-                &quot;map_dbecd503adb9f08ecbfb86cb10f9a0dc&quot;,
+            var map_0164d09571f1b2cea379a47a66577f2e = L.map(
+                &quot;map_0164d09571f1b2cea379a47a66577f2e&quot;,
                 {
                     center: [52.5097, 13.3675],
                     crs: L.CRS.EPSG3857,
@@ -174,37 +174,37 @@ ul.task-list li input[type="checkbox"] {
 
         
     
-            var tile_layer_601679b5f22ad1a87572939c77c0916d = L.tileLayer(
+            var tile_layer_7bacb326f98e0ee6106ff88b0784805f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_601679b5f22ad1a87572939c77c0916d.addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            tile_layer_7bacb326f98e0ee6106ff88b0784805f.addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-            var marker_05e67d6863cf51592664eef28f82aaa4 = L.marker(
+            var marker_8a387fd9fdd44ecabb642edb295a9275 = L.marker(
                 [52.52203, 13.39399],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_4566c168f14faf21661f1559401b820c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_a6c39d74289708de18133e72b0bceb46 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_5591a4f2a87c987fb40c8799015266e7 = $(`<div id=&quot;html_5591a4f2a87c987fb40c8799015266e7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q323169' target='_blank'>Münzkabinett Berlin</a></h3>         </div>`)[0];
-                popup_4566c168f14faf21661f1559401b820c.setContent(html_5591a4f2a87c987fb40c8799015266e7);
+                var html_abc1a0dc5bd98dd7162ea3a29f4fb722 = $(`<div id=&quot;html_abc1a0dc5bd98dd7162ea3a29f4fb722&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q323169' target='_blank'>Münzkabinett Berlin</a></h3>         </div>`)[0];
+                popup_a6c39d74289708de18133e72b0bceb46.setContent(html_abc1a0dc5bd98dd7162ea3a29f4fb722);
             
         
 
-        marker_05e67d6863cf51592664eef28f82aaa4.bindPopup(popup_4566c168f14faf21661f1559401b820c)
+        marker_8a387fd9fdd44ecabb642edb295a9275.bindPopup(popup_a6c39d74289708de18133e72b0bceb46)
         ;
 
         
     
     
-            marker_05e67d6863cf51592664eef28f82aaa4.bindTooltip(
+            marker_8a387fd9fdd44ecabb642edb295a9275.bindTooltip(
                 `<div>
                      Münzkabinett Berlin
                  </div>`,
@@ -212,28 +212,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_9f63e2e5bb0f135504d825c3dec0f6ed = L.marker(
+            var marker_89c8072f490b053c0503ec954086e99f = L.marker(
                 [52.52163, 13.39499],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_48fefec5c4ada1eed5433850efbb34f6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e41b3eb459b76ab555cf82c5ad15c1e2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_8c57ad551402733f0bf472a5bff4e402 = $(`<div id=&quot;html_8c57ad551402733f0bf472a5bff4e402&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1650436' target='_blank'>Skulpturensammlung und Museum für Byzantinische Kunst</a></h3>         </div>`)[0];
-                popup_48fefec5c4ada1eed5433850efbb34f6.setContent(html_8c57ad551402733f0bf472a5bff4e402);
+                var html_6f1d6107fb334528c18d5277bbbe8b27 = $(`<div id=&quot;html_6f1d6107fb334528c18d5277bbbe8b27&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1650436' target='_blank'>Skulpturensammlung und Museum für Byzantinische Kunst</a></h3>         </div>`)[0];
+                popup_e41b3eb459b76ab555cf82c5ad15c1e2.setContent(html_6f1d6107fb334528c18d5277bbbe8b27);
             
         
 
-        marker_9f63e2e5bb0f135504d825c3dec0f6ed.bindPopup(popup_48fefec5c4ada1eed5433850efbb34f6)
+        marker_89c8072f490b053c0503ec954086e99f.bindPopup(popup_e41b3eb459b76ab555cf82c5ad15c1e2)
         ;
 
         
     
     
-            marker_9f63e2e5bb0f135504d825c3dec0f6ed.bindTooltip(
+            marker_89c8072f490b053c0503ec954086e99f.bindTooltip(
                 `<div>
                      Skulpturensammlung und Museum für Byzantinische Kunst
                  </div>`,
@@ -241,28 +241,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_4804606f14467fa7dc7b28d62ed82248 = L.marker(
+            var marker_91fb88d7e3cc79f86953d6d4af7c0802 = L.marker(
                 [52.5192, 13.2867],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_0542ab65229a682ec468142092574993 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_92a7d4d80739038fcc2cb90fc3a4f391 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_80a1667a0a13ab592c036ad8d12a0e8c = $(`<div id=&quot;html_80a1667a0a13ab592c036ad8d12a0e8c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1526549' target='_blank'>Gipsformerei</a></h3>         </div>`)[0];
-                popup_0542ab65229a682ec468142092574993.setContent(html_80a1667a0a13ab592c036ad8d12a0e8c);
+                var html_2ac41f3b74824747bd82bcc3a0327e11 = $(`<div id=&quot;html_2ac41f3b74824747bd82bcc3a0327e11&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1526549' target='_blank'>Gipsformerei</a></h3>         </div>`)[0];
+                popup_92a7d4d80739038fcc2cb90fc3a4f391.setContent(html_2ac41f3b74824747bd82bcc3a0327e11);
             
         
 
-        marker_4804606f14467fa7dc7b28d62ed82248.bindPopup(popup_0542ab65229a682ec468142092574993)
+        marker_91fb88d7e3cc79f86953d6d4af7c0802.bindPopup(popup_92a7d4d80739038fcc2cb90fc3a4f391)
         ;
 
         
     
     
-            marker_4804606f14467fa7dc7b28d62ed82248.bindTooltip(
+            marker_91fb88d7e3cc79f86953d6d4af7c0802.bindTooltip(
                 `<div>
                      Gipsformerei
                  </div>`,
@@ -270,28 +270,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_d89a1fa1226042ac148b97ac39d5c433 = L.marker(
+            var marker_8f7b1a271c0da2085cdc2da5d4314767 = L.marker(
                 [52.521, 13.396],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_76786462561d89fc5b011844ad0285ec = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_86544fa5f31885e392db849c9294376f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_966c35004949f12763d681cd66e472b8 = $(`<div id=&quot;html_966c35004949f12763d681cd66e472b8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157298' target='_blank'>Pergamon Museum</a></h3>         </div>`)[0];
-                popup_76786462561d89fc5b011844ad0285ec.setContent(html_966c35004949f12763d681cd66e472b8);
+                var html_b7968e6130958c2e3540825cc57a6abb = $(`<div id=&quot;html_b7968e6130958c2e3540825cc57a6abb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157298' target='_blank'>Pergamon Museum</a></h3>         </div>`)[0];
+                popup_86544fa5f31885e392db849c9294376f.setContent(html_b7968e6130958c2e3540825cc57a6abb);
             
         
 
-        marker_d89a1fa1226042ac148b97ac39d5c433.bindPopup(popup_76786462561d89fc5b011844ad0285ec)
+        marker_8f7b1a271c0da2085cdc2da5d4314767.bindPopup(popup_86544fa5f31885e392db849c9294376f)
         ;
 
         
     
     
-            marker_d89a1fa1226042ac148b97ac39d5c433.bindTooltip(
+            marker_8f7b1a271c0da2085cdc2da5d4314767.bindTooltip(
                 `<div>
                      Pergamon Museum
                  </div>`,
@@ -299,28 +299,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_95d355999e34f168ffcc5fdab10b772e = L.marker(
+            var marker_2aa15cab95fb133a8bc0eb18d68bc69e = L.marker(
                 [52.515833, 13.397222],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_bec0193669c96d3d1b629ef16684afb3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_773ddcfbd0a39d52665641ec13a29877 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_13053ae3814cd0ea1db61a570fe0c3ce = $(`<div id=&quot;html_13053ae3814cd0ea1db61a570fe0c3ce&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q833817' target='_blank'>Friedrichswerder Church</a></h3>         </div>`)[0];
-                popup_bec0193669c96d3d1b629ef16684afb3.setContent(html_13053ae3814cd0ea1db61a570fe0c3ce);
+                var html_b3456eb2eca80a235e430243fe77eeab = $(`<div id=&quot;html_b3456eb2eca80a235e430243fe77eeab&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q833817' target='_blank'>Friedrichswerder Church</a></h3>         </div>`)[0];
+                popup_773ddcfbd0a39d52665641ec13a29877.setContent(html_b3456eb2eca80a235e430243fe77eeab);
             
         
 
-        marker_95d355999e34f168ffcc5fdab10b772e.bindPopup(popup_bec0193669c96d3d1b629ef16684afb3)
+        marker_2aa15cab95fb133a8bc0eb18d68bc69e.bindPopup(popup_773ddcfbd0a39d52665641ec13a29877)
         ;
 
         
     
     
-            marker_95d355999e34f168ffcc5fdab10b772e.bindTooltip(
+            marker_2aa15cab95fb133a8bc0eb18d68bc69e.bindTooltip(
                 `<div>
                      Friedrichswerder Church
                  </div>`,
@@ -328,28 +328,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_1af77e23e7272b1d2aceb6b4d2fe05b7 = L.marker(
+            var marker_e0bd9931e3c7a219c4713791ebcc86d8 = L.marker(
                 [52.5202, 13.3976],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_5030e3f9e78c4024ad1c1396961d3313 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e6ab84263ac5d659c08464ad30fc1003 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_4aeb1ab9b62175ef8568f72640ad5f88 = $(`<div id=&quot;html_4aeb1ab9b62175ef8568f72640ad5f88&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157316' target='_blank'>Neues Museum</a></h3>         </div>`)[0];
-                popup_5030e3f9e78c4024ad1c1396961d3313.setContent(html_4aeb1ab9b62175ef8568f72640ad5f88);
+                var html_83f81f8d1754c0219fe7c45733a8083d = $(`<div id=&quot;html_83f81f8d1754c0219fe7c45733a8083d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157316' target='_blank'>Neues Museum</a></h3>         </div>`)[0];
+                popup_e6ab84263ac5d659c08464ad30fc1003.setContent(html_83f81f8d1754c0219fe7c45733a8083d);
             
         
 
-        marker_1af77e23e7272b1d2aceb6b4d2fe05b7.bindPopup(popup_5030e3f9e78c4024ad1c1396961d3313)
+        marker_e0bd9931e3c7a219c4713791ebcc86d8.bindPopup(popup_e6ab84263ac5d659c08464ad30fc1003)
         ;
 
         
     
     
-            marker_1af77e23e7272b1d2aceb6b4d2fe05b7.bindTooltip(
+            marker_e0bd9931e3c7a219c4713791ebcc86d8.bindTooltip(
                 `<div>
                      Neues Museum
                  </div>`,
@@ -357,28 +357,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_bfa622c402a0b54673960afbd810f1e0 = L.marker(
+            var marker_a33d72ac8cc08f3aea44ee54fd42cb26 = L.marker(
                 [52.50861, 13.36666],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_9881d7788feaa5509ad66f3420b1dca2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4e3512fde0a14335ad9428e755a95fa0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_df401cdb2787cc4550e00078ccc63282 = $(`<div id=&quot;html_df401cdb2787cc4550e00078ccc63282&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q6445022' target='_blank'>Kunstbibliothek Berlin</a></h3>         </div>`)[0];
-                popup_9881d7788feaa5509ad66f3420b1dca2.setContent(html_df401cdb2787cc4550e00078ccc63282);
+                var html_4a18b24379d25bcb173458c5d7ff5372 = $(`<div id=&quot;html_4a18b24379d25bcb173458c5d7ff5372&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q6445022' target='_blank'>Kunstbibliothek Berlin</a></h3>         </div>`)[0];
+                popup_4e3512fde0a14335ad9428e755a95fa0.setContent(html_4a18b24379d25bcb173458c5d7ff5372);
             
         
 
-        marker_bfa622c402a0b54673960afbd810f1e0.bindPopup(popup_9881d7788feaa5509ad66f3420b1dca2)
+        marker_a33d72ac8cc08f3aea44ee54fd42cb26.bindPopup(popup_4e3512fde0a14335ad9428e755a95fa0)
         ;
 
         
     
     
-            marker_bfa622c402a0b54673960afbd810f1e0.bindTooltip(
+            marker_a33d72ac8cc08f3aea44ee54fd42cb26.bindTooltip(
                 `<div>
                      Kunstbibliothek Berlin
                  </div>`,
@@ -386,28 +386,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_dc8d618f84d4218cee031127e43d5a08 = L.marker(
+            var marker_3a221551f07a958443084066fe220476 = L.marker(
                 [52.52069444, 13.39680556],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_b5d458a076401c5f203f24a0fe7369b0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_543c4367f68bc2883edc8e39a6806b0e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_ca1312c316ba99f65af5481c51421c6d = $(`<div id=&quot;html_ca1312c316ba99f65af5481c51421c6d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q542084' target='_blank'>Vorderasiatisches Museum Berlin</a></h3>         </div>`)[0];
-                popup_b5d458a076401c5f203f24a0fe7369b0.setContent(html_ca1312c316ba99f65af5481c51421c6d);
+                var html_2fae5aa3142b0185b43cf0311b43ca8b = $(`<div id=&quot;html_2fae5aa3142b0185b43cf0311b43ca8b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q542084' target='_blank'>Vorderasiatisches Museum Berlin</a></h3>         </div>`)[0];
+                popup_543c4367f68bc2883edc8e39a6806b0e.setContent(html_2fae5aa3142b0185b43cf0311b43ca8b);
             
         
 
-        marker_dc8d618f84d4218cee031127e43d5a08.bindPopup(popup_b5d458a076401c5f203f24a0fe7369b0)
+        marker_3a221551f07a958443084066fe220476.bindPopup(popup_543c4367f68bc2883edc8e39a6806b0e)
         ;
 
         
     
     
-            marker_dc8d618f84d4218cee031127e43d5a08.bindTooltip(
+            marker_3a221551f07a958443084066fe220476.bindTooltip(
                 `<div>
                      Vorderasiatisches Museum Berlin
                  </div>`,
@@ -415,28 +415,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_2e8e6f9397f58aaa4652bf94d429a07b = L.marker(
+            var marker_383fd297d9e30c8df6674cb66a3a7060 = L.marker(
                 [52.519444444, 13.398888888],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_0095eedd56b1e8403e0035e9bbca02ff = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4881563dea21a8b60e43537f1f0e6c7e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_0ea902b9c6e3913c025e754e9dbafdd5 = $(`<div id=&quot;html_0ea902b9c6e3913c025e754e9dbafdd5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q156722' target='_blank'>Altes Museum</a></h3>         </div>`)[0];
-                popup_0095eedd56b1e8403e0035e9bbca02ff.setContent(html_0ea902b9c6e3913c025e754e9dbafdd5);
+                var html_71f7a8dbf1d3bdf3a7b851c17efea854 = $(`<div id=&quot;html_71f7a8dbf1d3bdf3a7b851c17efea854&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q156722' target='_blank'>Altes Museum</a></h3>         </div>`)[0];
+                popup_4881563dea21a8b60e43537f1f0e6c7e.setContent(html_71f7a8dbf1d3bdf3a7b851c17efea854);
             
         
 
-        marker_2e8e6f9397f58aaa4652bf94d429a07b.bindPopup(popup_0095eedd56b1e8403e0035e9bbca02ff)
+        marker_383fd297d9e30c8df6674cb66a3a7060.bindPopup(popup_4881563dea21a8b60e43537f1f0e6c7e)
         ;
 
         
     
     
-            marker_2e8e6f9397f58aaa4652bf94d429a07b.bindTooltip(
+            marker_383fd297d9e30c8df6674cb66a3a7060.bindTooltip(
                 `<div>
                      Altes Museum
                  </div>`,
@@ -444,28 +444,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_31721e6fa14f19861d2dd9f25d7fac71 = L.marker(
+            var marker_8589e035a990400750ad6210303e2b2e = L.marker(
                 [52.5194, 13.3983],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_099a018ec1e4582fc2282214aceca2bf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e279ea40ef45c41e27a4f3828fa78656 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_04a5a13d14bba21d443d7994ad583fb7 = $(`<div id=&quot;html_04a5a13d14bba21d443d7994ad583fb7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q475394' target='_blank'>Antikensammlung Berlin</a></h3>         </div>`)[0];
-                popup_099a018ec1e4582fc2282214aceca2bf.setContent(html_04a5a13d14bba21d443d7994ad583fb7);
+                var html_5024f11caa1a1897126a1d72fdf0ea70 = $(`<div id=&quot;html_5024f11caa1a1897126a1d72fdf0ea70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q475394' target='_blank'>Antikensammlung Berlin</a></h3>         </div>`)[0];
+                popup_e279ea40ef45c41e27a4f3828fa78656.setContent(html_5024f11caa1a1897126a1d72fdf0ea70);
             
         
 
-        marker_31721e6fa14f19861d2dd9f25d7fac71.bindPopup(popup_099a018ec1e4582fc2282214aceca2bf)
+        marker_8589e035a990400750ad6210303e2b2e.bindPopup(popup_e279ea40ef45c41e27a4f3828fa78656)
         ;
 
         
     
     
-            marker_31721e6fa14f19861d2dd9f25d7fac71.bindTooltip(
+            marker_8589e035a990400750ad6210303e2b2e.bindTooltip(
                 `<div>
                      Antikensammlung Berlin
                  </div>`,
@@ -473,28 +473,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_9357572148d4bae67189a91d7ed1cbb6 = L.marker(
+            var marker_da5665148406a9d586022af1ce942566 = L.marker(
                 [52.521944444, 13.394722222],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_9e3016469a08d7d3993481f2ed026a50 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_38cd88f1065d4342a2afd112f43a909a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_dd3623f029311ce80203f1f04a5835fa = $(`<div id=&quot;html_dd3623f029311ce80203f1f04a5835fa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157825' target='_blank'>Bode Museum</a></h3>         </div>`)[0];
-                popup_9e3016469a08d7d3993481f2ed026a50.setContent(html_dd3623f029311ce80203f1f04a5835fa);
+                var html_1743de0edcef3eefd8b7e06e86691abd = $(`<div id=&quot;html_1743de0edcef3eefd8b7e06e86691abd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157825' target='_blank'>Bode Museum</a></h3>         </div>`)[0];
+                popup_38cd88f1065d4342a2afd112f43a909a.setContent(html_1743de0edcef3eefd8b7e06e86691abd);
             
         
 
-        marker_9357572148d4bae67189a91d7ed1cbb6.bindPopup(popup_9e3016469a08d7d3993481f2ed026a50)
+        marker_da5665148406a9d586022af1ce942566.bindPopup(popup_38cd88f1065d4342a2afd112f43a909a)
         ;
 
         
     
     
-            marker_9357572148d4bae67189a91d7ed1cbb6.bindTooltip(
+            marker_da5665148406a9d586022af1ce942566.bindTooltip(
                 `<div>
                      Bode Museum
                  </div>`,
@@ -502,28 +502,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_25147e3d9cd0dc03eaef14b7306e61e8 = L.marker(
+            var marker_47f7512c258ff2a1b051e43cb3a1a4ef = L.marker(
                 [52.5084, 13.367],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_ac76ffd6761ed587bf0b291b39188726 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_ca160d7dd589a10d3bffa539c1b4102d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_9aed98960b39a6a0ae9b1722016431e1 = $(`<div id=&quot;html_9aed98960b39a6a0ae9b1722016431e1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555946' target='_blank'>Kupferstichkabinett Berlin</a></h3>         </div>`)[0];
-                popup_ac76ffd6761ed587bf0b291b39188726.setContent(html_9aed98960b39a6a0ae9b1722016431e1);
+                var html_9317108690f8512666b1bd8c38c49e61 = $(`<div id=&quot;html_9317108690f8512666b1bd8c38c49e61&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555946' target='_blank'>Kupferstichkabinett Berlin</a></h3>         </div>`)[0];
+                popup_ca160d7dd589a10d3bffa539c1b4102d.setContent(html_9317108690f8512666b1bd8c38c49e61);
             
         
 
-        marker_25147e3d9cd0dc03eaef14b7306e61e8.bindPopup(popup_ac76ffd6761ed587bf0b291b39188726)
+        marker_47f7512c258ff2a1b051e43cb3a1a4ef.bindPopup(popup_ca160d7dd589a10d3bffa539c1b4102d)
         ;
 
         
     
     
-            marker_25147e3d9cd0dc03eaef14b7306e61e8.bindTooltip(
+            marker_47f7512c258ff2a1b051e43cb3a1a4ef.bindTooltip(
                 `<div>
                      Kupferstichkabinett Berlin
                  </div>`,
@@ -531,28 +531,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_e621f5d4b593e4a44ddf9eb2dd7d333c = L.marker(
+            var marker_8ec563ddc75d369583000f3ad17c2640 = L.marker(
                 [52.508611111, 13.364722222],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_f18a1c3a20ef71389dd8f86351f4510f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_ade8ba19fe2bd7f3bbbba4ee066b9359 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_1aea17cacf6404dd26f4b986005fdb39 = $(`<div id=&quot;html_1aea17cacf6404dd26f4b986005fdb39&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q165631' target='_blank'>Gemäldegalerie</a></h3>         </div>`)[0];
-                popup_f18a1c3a20ef71389dd8f86351f4510f.setContent(html_1aea17cacf6404dd26f4b986005fdb39);
+                var html_46835c6d91fd5ca56a0e04deda1d2970 = $(`<div id=&quot;html_46835c6d91fd5ca56a0e04deda1d2970&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q165631' target='_blank'>Gemäldegalerie</a></h3>         </div>`)[0];
+                popup_ade8ba19fe2bd7f3bbbba4ee066b9359.setContent(html_46835c6d91fd5ca56a0e04deda1d2970);
             
         
 
-        marker_e621f5d4b593e4a44ddf9eb2dd7d333c.bindPopup(popup_f18a1c3a20ef71389dd8f86351f4510f)
+        marker_8ec563ddc75d369583000f3ad17c2640.bindPopup(popup_ade8ba19fe2bd7f3bbbba4ee066b9359)
         ;
 
         
     
     
-            marker_e621f5d4b593e4a44ddf9eb2dd7d333c.bindTooltip(
+            marker_8ec563ddc75d369583000f3ad17c2640.bindTooltip(
                 `<div>
                      Gemäldegalerie
                  </div>`,
@@ -560,28 +560,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_becdf5f5887717c1b93a8d4d7b311891 = L.marker(
+            var marker_5487b7a833c0c2b6af455249cf86698e = L.marker(
                 [52.5175, 13.402778055],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_c0395b57ea2fa43fb00f445e0b6d77a5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_954f801a5c1c6f86c628910c54ce8696 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_a0b1c6439b3fce6354e0bd802e9b343b = $(`<div id=&quot;html_a0b1c6439b3fce6354e0bd802e9b343b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q370045' target='_blank'>Museum of Asian Art</a></h3>         </div>`)[0];
-                popup_c0395b57ea2fa43fb00f445e0b6d77a5.setContent(html_a0b1c6439b3fce6354e0bd802e9b343b);
+                var html_69b88c8d89e166954954a252a147e4fd = $(`<div id=&quot;html_69b88c8d89e166954954a252a147e4fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q370045' target='_blank'>Museum of Asian Art</a></h3>         </div>`)[0];
+                popup_954f801a5c1c6f86c628910c54ce8696.setContent(html_69b88c8d89e166954954a252a147e4fd);
             
         
 
-        marker_becdf5f5887717c1b93a8d4d7b311891.bindPopup(popup_c0395b57ea2fa43fb00f445e0b6d77a5)
+        marker_5487b7a833c0c2b6af455249cf86698e.bindPopup(popup_954f801a5c1c6f86c628910c54ce8696)
         ;
 
         
     
     
-            marker_becdf5f5887717c1b93a8d4d7b311891.bindTooltip(
+            marker_5487b7a833c0c2b6af455249cf86698e.bindTooltip(
                 `<div>
                      Museum of Asian Art
                  </div>`,
@@ -589,28 +589,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_4b90fd4209f2c037a4ec99c40475fb86 = L.marker(
+            var marker_35d21f2a038de4c568fc04fbc129bedc = L.marker(
                 [52.528333333, 13.372222222],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_ace54676d22215953665a16fac242427 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_7d5c50cd46e4187474b386e28a7c72c2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_44d762c0df396a80f09bed466767535b = $(`<div id=&quot;html_44d762c0df396a80f09bed466767535b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q584756' target='_blank'>Hamburger Bahnhof</a></h3>         </div>`)[0];
-                popup_ace54676d22215953665a16fac242427.setContent(html_44d762c0df396a80f09bed466767535b);
+                var html_1caf812dfb31fe26f618517251b87d42 = $(`<div id=&quot;html_1caf812dfb31fe26f618517251b87d42&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q584756' target='_blank'>Hamburger Bahnhof</a></h3>         </div>`)[0];
+                popup_7d5c50cd46e4187474b386e28a7c72c2.setContent(html_1caf812dfb31fe26f618517251b87d42);
             
         
 
-        marker_4b90fd4209f2c037a4ec99c40475fb86.bindPopup(popup_ace54676d22215953665a16fac242427)
+        marker_35d21f2a038de4c568fc04fbc129bedc.bindPopup(popup_7d5c50cd46e4187474b386e28a7c72c2)
         ;
 
         
     
     
-            marker_4b90fd4209f2c037a4ec99c40475fb86.bindTooltip(
+            marker_35d21f2a038de4c568fc04fbc129bedc.bindTooltip(
                 `<div>
                      Hamburger Bahnhof
                  </div>`,
@@ -618,28 +618,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_c6efe0e8e5d83ebf422ab0ba5e924a16 = L.marker(
+            var marker_d891a9babd388a1254d849586ca82ee9 = L.marker(
                 [52.5206, 13.3978],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_ae216f77cf634a990ce00c3bfb8d800d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_23d2408c42b26a83b592bf5eb5e57ce2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_636efb391f30a8ace244018392d22993 = $(`<div id=&quot;html_636efb391f30a8ace244018392d22993&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555019' target='_blank'>Museum for prehistory and early history</a></h3>         </div>`)[0];
-                popup_ae216f77cf634a990ce00c3bfb8d800d.setContent(html_636efb391f30a8ace244018392d22993);
+                var html_d3e1f97bc34ce9e449cb9c2682522b70 = $(`<div id=&quot;html_d3e1f97bc34ce9e449cb9c2682522b70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555019' target='_blank'>Museum for prehistory and early history</a></h3>         </div>`)[0];
+                popup_23d2408c42b26a83b592bf5eb5e57ce2.setContent(html_d3e1f97bc34ce9e449cb9c2682522b70);
             
         
 
-        marker_c6efe0e8e5d83ebf422ab0ba5e924a16.bindPopup(popup_ae216f77cf634a990ce00c3bfb8d800d)
+        marker_d891a9babd388a1254d849586ca82ee9.bindPopup(popup_23d2408c42b26a83b592bf5eb5e57ce2)
         ;
 
         
     
     
-            marker_c6efe0e8e5d83ebf422ab0ba5e924a16.bindTooltip(
+            marker_d891a9babd388a1254d849586ca82ee9.bindTooltip(
                 `<div>
                      Museum for prehistory and early history
                  </div>`,
@@ -647,28 +647,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_3f55f5310e11f0789bf2bd8655c535a1 = L.marker(
+            var marker_fe7816eed7bad4717ef3a064c7093c8e = L.marker(
                 [52.52138889, 13.39555556],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_7824f88d849a18b3646d1366c16935c8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_3a8d5efe579c05463c1fe6b0e17e06dc = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_169e084744bf563832323673be16f09f = $(`<div id=&quot;html_169e084744bf563832323673be16f09f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q162610' target='_blank'>National Gallery Berlin</a></h3>         </div>`)[0];
-                popup_7824f88d849a18b3646d1366c16935c8.setContent(html_169e084744bf563832323673be16f09f);
+                var html_f1844c53c8f39838d6d1d401045f0b37 = $(`<div id=&quot;html_f1844c53c8f39838d6d1d401045f0b37&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q162610' target='_blank'>National Gallery Berlin</a></h3>         </div>`)[0];
+                popup_3a8d5efe579c05463c1fe6b0e17e06dc.setContent(html_f1844c53c8f39838d6d1d401045f0b37);
             
         
 
-        marker_3f55f5310e11f0789bf2bd8655c535a1.bindPopup(popup_7824f88d849a18b3646d1366c16935c8)
+        marker_fe7816eed7bad4717ef3a064c7093c8e.bindPopup(popup_3a8d5efe579c05463c1fe6b0e17e06dc)
         ;
 
         
     
     
-            marker_3f55f5310e11f0789bf2bd8655c535a1.bindTooltip(
+            marker_fe7816eed7bad4717ef3a064c7093c8e.bindTooltip(
                 `<div>
                      National Gallery Berlin
                  </div>`,
@@ -676,28 +676,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_cfcf9739e99ed1aa8af71d207fc09d4f = L.marker(
+            var marker_2f22fcb14be67d3111907cc2ffdab5b2 = L.marker(
                 [52.506944444, 13.367777777],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_c8fb472d6150dbe0246104cd0974f5c8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_582ea6a72161f7d21aa59c9c4bf2cef3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_5dc6be3c78478d78dfc79779dc46ffbe = $(`<div id=&quot;html_5dc6be3c78478d78dfc79779dc46ffbe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q32659772' target='_blank'>Neue Nationalgalerie</a></h3>         </div>`)[0];
-                popup_c8fb472d6150dbe0246104cd0974f5c8.setContent(html_5dc6be3c78478d78dfc79779dc46ffbe);
+                var html_17c1372633bcef643b822173f8db1e80 = $(`<div id=&quot;html_17c1372633bcef643b822173f8db1e80&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q32659772' target='_blank'>Neue Nationalgalerie</a></h3>         </div>`)[0];
+                popup_582ea6a72161f7d21aa59c9c4bf2cef3.setContent(html_17c1372633bcef643b822173f8db1e80);
             
         
 
-        marker_cfcf9739e99ed1aa8af71d207fc09d4f.bindPopup(popup_c8fb472d6150dbe0246104cd0974f5c8)
+        marker_2f22fcb14be67d3111907cc2ffdab5b2.bindPopup(popup_582ea6a72161f7d21aa59c9c4bf2cef3)
         ;
 
         
     
     
-            marker_cfcf9739e99ed1aa8af71d207fc09d4f.bindTooltip(
+            marker_2f22fcb14be67d3111907cc2ffdab5b2.bindTooltip(
                 `<div>
                      Neue Nationalgalerie
                  </div>`,
@@ -705,28 +705,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_4e35581c5d4e47846a565c935970eaca = L.marker(
+            var marker_bb558a97691308046857186d47e2bf1d = L.marker(
                 [52.5175, 13.402778055],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_9d132e43e4902ab2297a4b3f58422fa5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2aadf0fb5214c88c187fc151795196d2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_73399f14271c5264401da9c183e70f0b = $(`<div id=&quot;html_73399f14271c5264401da9c183e70f0b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q688353' target='_blank'>Ethnological Museum Berlin</a></h3>         </div>`)[0];
-                popup_9d132e43e4902ab2297a4b3f58422fa5.setContent(html_73399f14271c5264401da9c183e70f0b);
+                var html_1fc486686d85457fcf59bc064c9aa5d3 = $(`<div id=&quot;html_1fc486686d85457fcf59bc064c9aa5d3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q688353' target='_blank'>Ethnological Museum Berlin</a></h3>         </div>`)[0];
+                popup_2aadf0fb5214c88c187fc151795196d2.setContent(html_1fc486686d85457fcf59bc064c9aa5d3);
             
         
 
-        marker_4e35581c5d4e47846a565c935970eaca.bindPopup(popup_9d132e43e4902ab2297a4b3f58422fa5)
+        marker_bb558a97691308046857186d47e2bf1d.bindPopup(popup_2aadf0fb5214c88c187fc151795196d2)
         ;
 
         
     
     
-            marker_4e35581c5d4e47846a565c935970eaca.bindTooltip(
+            marker_bb558a97691308046857186d47e2bf1d.bindTooltip(
                 `<div>
                      Ethnological Museum Berlin
                  </div>`,
@@ -734,28 +734,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_5b5ad1b2e18414ce094b543e74db9228 = L.marker(
+            var marker_62b0f010b7324f6da564668f7a18245b = L.marker(
                 [52.5192, 13.2953],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_e86bdb4ef6ea0bb476cde456410adb44 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_c60ce6cf715b4807eb412fb78d83c7f8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_d507887a2cef3f4b470f2f4c8ae0c8a7 = $(`<div id=&quot;html_d507887a2cef3f4b470f2f4c8ae0c8a7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q641630' target='_blank'>Berggruen Museum</a></h3>         </div>`)[0];
-                popup_e86bdb4ef6ea0bb476cde456410adb44.setContent(html_d507887a2cef3f4b470f2f4c8ae0c8a7);
+                var html_fd1c901f8ddcfef70f2599941c68260e = $(`<div id=&quot;html_fd1c901f8ddcfef70f2599941c68260e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q641630' target='_blank'>Berggruen Museum</a></h3>         </div>`)[0];
+                popup_c60ce6cf715b4807eb412fb78d83c7f8.setContent(html_fd1c901f8ddcfef70f2599941c68260e);
             
         
 
-        marker_5b5ad1b2e18414ce094b543e74db9228.bindPopup(popup_e86bdb4ef6ea0bb476cde456410adb44)
+        marker_62b0f010b7324f6da564668f7a18245b.bindPopup(popup_c60ce6cf715b4807eb412fb78d83c7f8)
         ;
 
         
     
     
-            marker_5b5ad1b2e18414ce094b543e74db9228.bindTooltip(
+            marker_62b0f010b7324f6da564668f7a18245b.bindTooltip(
                 `<div>
                      Berggruen Museum
                  </div>`,
@@ -763,28 +763,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_f5d7317b774eb4cc9f6f4615ce0af88e = L.marker(
+            var marker_d8e8c8c74badabf0079df75dbda45aab = L.marker(
                 [52.5191, 13.2967],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_3049cfd76bc7aa468927fc9d37a53a34 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_225f0af37b20c4b48068e61610f9ea3a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_33e20c1a6c17378a3a28345bf26d2370 = $(`<div id=&quot;html_33e20c1a6c17378a3a28345bf26d2370&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q322010' target='_blank'>Scharf-Gerstenberg Collection</a></h3>         </div>`)[0];
-                popup_3049cfd76bc7aa468927fc9d37a53a34.setContent(html_33e20c1a6c17378a3a28345bf26d2370);
+                var html_fe9616ed91cfe51742779534620af4c6 = $(`<div id=&quot;html_fe9616ed91cfe51742779534620af4c6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q322010' target='_blank'>Scharf-Gerstenberg Collection</a></h3>         </div>`)[0];
+                popup_225f0af37b20c4b48068e61610f9ea3a.setContent(html_fe9616ed91cfe51742779534620af4c6);
             
         
 
-        marker_f5d7317b774eb4cc9f6f4615ce0af88e.bindPopup(popup_3049cfd76bc7aa468927fc9d37a53a34)
+        marker_d8e8c8c74badabf0079df75dbda45aab.bindPopup(popup_225f0af37b20c4b48068e61610f9ea3a)
         ;
 
         
     
     
-            marker_f5d7317b774eb4cc9f6f4615ce0af88e.bindTooltip(
+            marker_d8e8c8c74badabf0079df75dbda45aab.bindTooltip(
                 `<div>
                      Scharf-Gerstenberg Collection
                  </div>`,
@@ -792,28 +792,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_f13c652ab1183338d62784f6c5581ac1 = L.marker(
+            var marker_078feeeb6a83c818f899750366457457 = L.marker(
                 [52.5081395, 13.3320739],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_a2d5bfd1ce8d4116fec6b6f3c8cf3361 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_43aee59bad623c936a8bd78c20ba47ff = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_773b18c0e120189f383d1e26ba7533ef = $(`<div id=&quot;html_773b18c0e120189f383d1e26ba7533ef&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q564747' target='_blank'>Museum of Photography</a></h3>         </div>`)[0];
-                popup_a2d5bfd1ce8d4116fec6b6f3c8cf3361.setContent(html_773b18c0e120189f383d1e26ba7533ef);
+                var html_a1ebff033ebea4a2402e46a96be283d9 = $(`<div id=&quot;html_a1ebff033ebea4a2402e46a96be283d9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q564747' target='_blank'>Museum of Photography</a></h3>         </div>`)[0];
+                popup_43aee59bad623c936a8bd78c20ba47ff.setContent(html_a1ebff033ebea4a2402e46a96be283d9);
             
         
 
-        marker_f13c652ab1183338d62784f6c5581ac1.bindPopup(popup_a2d5bfd1ce8d4116fec6b6f3c8cf3361)
+        marker_078feeeb6a83c818f899750366457457.bindPopup(popup_43aee59bad623c936a8bd78c20ba47ff)
         ;
 
         
     
     
-            marker_f13c652ab1183338d62784f6c5581ac1.bindTooltip(
+            marker_078feeeb6a83c818f899750366457457.bindTooltip(
                 `<div>
                      Museum of Photography
                  </div>`,
@@ -821,28 +821,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_55cb6f7288be5fb0d66a9ed6afe67423 = L.marker(
+            var marker_ff9aa4fa1e931d12a55f681b7f29cb7a = L.marker(
                 [52.4558, 13.2928],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_2dc1b58b78a77c3ddd6fb26ae76b6614 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_dfd44a162d785c139a6fb4674b9879c7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_c9a4e510c9b2c2a53bd3551b4e4f7184 = $(`<div id=&quot;html_c9a4e510c9b2c2a53bd3551b4e4f7184&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q318174' target='_blank'>Museum of European Cultures</a></h3>         </div>`)[0];
-                popup_2dc1b58b78a77c3ddd6fb26ae76b6614.setContent(html_c9a4e510c9b2c2a53bd3551b4e4f7184);
+                var html_1a86ff35db05d6355e016f44d29c49a9 = $(`<div id=&quot;html_1a86ff35db05d6355e016f44d29c49a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q318174' target='_blank'>Museum of European Cultures</a></h3>         </div>`)[0];
+                popup_dfd44a162d785c139a6fb4674b9879c7.setContent(html_1a86ff35db05d6355e016f44d29c49a9);
             
         
 
-        marker_55cb6f7288be5fb0d66a9ed6afe67423.bindPopup(popup_2dc1b58b78a77c3ddd6fb26ae76b6614)
+        marker_ff9aa4fa1e931d12a55f681b7f29cb7a.bindPopup(popup_dfd44a162d785c139a6fb4674b9879c7)
         ;
 
         
     
     
-            marker_55cb6f7288be5fb0d66a9ed6afe67423.bindTooltip(
+            marker_ff9aa4fa1e931d12a55f681b7f29cb7a.bindTooltip(
                 `<div>
                      Museum of European Cultures
                  </div>`,
@@ -850,28 +850,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_618d558a0470618770c24fa86b678f6d = L.marker(
+            var marker_2a3eadfd78a4c4320892580c22026893 = L.marker(
                 [52.5208, 13.3964],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_54e00b5735a621a641ffb715c83b78e9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_28e562b84750365570c07899d362d4c9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_3aa6713039c9d38c6bac8c165a8345e9 = $(`<div id=&quot;html_3aa6713039c9d38c6bac8c165a8345e9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1954632' target='_blank'>Museum of Islamic Art</a></h3>         </div>`)[0];
-                popup_54e00b5735a621a641ffb715c83b78e9.setContent(html_3aa6713039c9d38c6bac8c165a8345e9);
+                var html_997db4ae14b86746fa44f4c8f6e5daae = $(`<div id=&quot;html_997db4ae14b86746fa44f4c8f6e5daae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1954632' target='_blank'>Museum of Islamic Art</a></h3>         </div>`)[0];
+                popup_28e562b84750365570c07899d362d4c9.setContent(html_997db4ae14b86746fa44f4c8f6e5daae);
             
         
 
-        marker_618d558a0470618770c24fa86b678f6d.bindPopup(popup_54e00b5735a621a641ffb715c83b78e9)
+        marker_2a3eadfd78a4c4320892580c22026893.bindPopup(popup_28e562b84750365570c07899d362d4c9)
         ;
 
         
     
     
-            marker_618d558a0470618770c24fa86b678f6d.bindTooltip(
+            marker_2a3eadfd78a4c4320892580c22026893.bindTooltip(
                 `<div>
                      Museum of Islamic Art
                  </div>`,
@@ -879,28 +879,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_4ac5fdd3f74c7bfb1688579ce47b2ff8 = L.marker(
+            var marker_7413b73e580169003ee33904c38e769c = L.marker(
                 [52.520238888, 13.397741666],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_43d410cd89c175eda6a24d8f06d9c7c2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_9e04ba56300632a0507b7d146861d881 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_6cd3e7c4ae262cf06863d58bb633c9be = $(`<div id=&quot;html_6cd3e7c4ae262cf06863d58bb633c9be&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q254156' target='_blank'>Egyptian Museum of Berlin</a></h3>         </div>`)[0];
-                popup_43d410cd89c175eda6a24d8f06d9c7c2.setContent(html_6cd3e7c4ae262cf06863d58bb633c9be);
+                var html_310c0f31234589a2004e761ed3156355 = $(`<div id=&quot;html_310c0f31234589a2004e761ed3156355&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q254156' target='_blank'>Egyptian Museum of Berlin</a></h3>         </div>`)[0];
+                popup_9e04ba56300632a0507b7d146861d881.setContent(html_310c0f31234589a2004e761ed3156355);
             
         
 
-        marker_4ac5fdd3f74c7bfb1688579ce47b2ff8.bindPopup(popup_43d410cd89c175eda6a24d8f06d9c7c2)
+        marker_7413b73e580169003ee33904c38e769c.bindPopup(popup_9e04ba56300632a0507b7d146861d881)
         ;
 
         
     
     
-            marker_4ac5fdd3f74c7bfb1688579ce47b2ff8.bindTooltip(
+            marker_7413b73e580169003ee33904c38e769c.bindTooltip(
                 `<div>
                      Egyptian Museum of Berlin
                  </div>`,
@@ -908,28 +908,28 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_782bc4a31f61158b443a5361d655e6d4 = L.marker(
+            var marker_9653fd56897acdd92f8ea6940e3e19df = L.marker(
                 [52.5097, 13.3675],
                 {}
-            ).addTo(map_dbecd503adb9f08ecbfb86cb10f9a0dc);
+            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
         
     
-        var popup_b5b9696b01bfc1fda089440567ce8d5c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2b9a6334e343fd47e9e194769a6d9569 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_7837393db1d2ba2f3b6e03816db86abc = $(`<div id=&quot;html_7837393db1d2ba2f3b6e03816db86abc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q477503' target='_blank'>Museum of Decorative Arts</a></h3>         </div>`)[0];
-                popup_b5b9696b01bfc1fda089440567ce8d5c.setContent(html_7837393db1d2ba2f3b6e03816db86abc);
+                var html_64127880256b1f0071ea77a59514dc64 = $(`<div id=&quot;html_64127880256b1f0071ea77a59514dc64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q477503' target='_blank'>Museum of Decorative Arts</a></h3>         </div>`)[0];
+                popup_2b9a6334e343fd47e9e194769a6d9569.setContent(html_64127880256b1f0071ea77a59514dc64);
             
         
 
-        marker_782bc4a31f61158b443a5361d655e6d4.bindPopup(popup_b5b9696b01bfc1fda089440567ce8d5c)
+        marker_9653fd56897acdd92f8ea6940e3e19df.bindPopup(popup_2b9a6334e343fd47e9e194769a6d9569)
         ;
 
         
     
     
-            marker_782bc4a31f61158b443a5361d655e6d4.bindTooltip(
+            marker_9653fd56897acdd92f8ea6940e3e19df.bindTooltip(
                 `<div>
                      Museum of Decorative Arts
                  </div>`,

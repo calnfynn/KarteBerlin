@@ -15,4 +15,4 @@ format:
     toc: false
     number-sections: false
     theme: #see https://bootswatch.com/
-      - lumen
+      - pulse
