@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-03-06">
+<meta name="dcterms.date" content="2025-03-10">
 
 <title>Karte Berlin</title>
 <style>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 6, 2025</p>
+      <p class="date">March 10, 2025</p>
     </div>
   </div>
   
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_0164d09571f1b2cea379a47a66577f2e {
+                #map_4b8aa938b448e77a0357d9c3bf3d9c25 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -149,18 +149,20 @@ ul.task-list li input[type="checkbox"] {
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css&quot;/>
 </head>
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_0164d09571f1b2cea379a47a66577f2e&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_4b8aa938b448e77a0357d9c3bf3d9c25&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_0164d09571f1b2cea379a47a66577f2e = L.map(
-                &quot;map_0164d09571f1b2cea379a47a66577f2e&quot;,
+            var map_4b8aa938b448e77a0357d9c3bf3d9c25 = L.map(
+                &quot;map_4b8aa938b448e77a0357d9c3bf3d9c25&quot;,
                 {
                     center: [52.5097, 13.3675],
                     crs: L.CRS.EPSG3857,
@@ -174,298 +176,158 @@ ul.task-list li input[type="checkbox"] {
 
         
     
-            var tile_layer_7bacb326f98e0ee6106ff88b0784805f = L.tileLayer(
+            var tile_layer_e99b1e9923aa2e714e361874665ca286 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_7bacb326f98e0ee6106ff88b0784805f.addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            tile_layer_e99b1e9923aa2e714e361874665ca286.addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-            var marker_8a387fd9fdd44ecabb642edb295a9275 = L.marker(
-                [52.52203, 13.39399],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            L.control.fullscreen(
+                {&quot;forceSeparateButton&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;title&quot;: &quot;Vollbild&quot;, &quot;titleCancel&quot;: &quot;Schlie\u00dfen&quot;}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_a6c39d74289708de18133e72b0bceb46 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_abc1a0dc5bd98dd7162ea3a29f4fb722 = $(`<div id=&quot;html_abc1a0dc5bd98dd7162ea3a29f4fb722&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q323169' target='_blank'>Münzkabinett Berlin</a></h3>         </div>`)[0];
-                popup_a6c39d74289708de18133e72b0bceb46.setContent(html_abc1a0dc5bd98dd7162ea3a29f4fb722);
-            
-        
-
-        marker_8a387fd9fdd44ecabb642edb295a9275.bindPopup(popup_a6c39d74289708de18133e72b0bceb46)
-        ;
-
-        
-    
-    
-            marker_8a387fd9fdd44ecabb642edb295a9275.bindTooltip(
-                `<div>
-                     Münzkabinett Berlin
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_89c8072f490b053c0503ec954086e99f = L.marker(
-                [52.52163, 13.39499],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_e41b3eb459b76ab555cf82c5ad15c1e2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_6f1d6107fb334528c18d5277bbbe8b27 = $(`<div id=&quot;html_6f1d6107fb334528c18d5277bbbe8b27&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1650436' target='_blank'>Skulpturensammlung und Museum für Byzantinische Kunst</a></h3>         </div>`)[0];
-                popup_e41b3eb459b76ab555cf82c5ad15c1e2.setContent(html_6f1d6107fb334528c18d5277bbbe8b27);
-            
-        
-
-        marker_89c8072f490b053c0503ec954086e99f.bindPopup(popup_e41b3eb459b76ab555cf82c5ad15c1e2)
-        ;
-
-        
-    
-    
-            marker_89c8072f490b053c0503ec954086e99f.bindTooltip(
-                `<div>
-                     Skulpturensammlung und Museum für Byzantinische Kunst
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_91fb88d7e3cc79f86953d6d4af7c0802 = L.marker(
-                [52.5192, 13.2867],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_92a7d4d80739038fcc2cb90fc3a4f391 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_2ac41f3b74824747bd82bcc3a0327e11 = $(`<div id=&quot;html_2ac41f3b74824747bd82bcc3a0327e11&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1526549' target='_blank'>Gipsformerei</a></h3>         </div>`)[0];
-                popup_92a7d4d80739038fcc2cb90fc3a4f391.setContent(html_2ac41f3b74824747bd82bcc3a0327e11);
-            
-        
-
-        marker_91fb88d7e3cc79f86953d6d4af7c0802.bindPopup(popup_92a7d4d80739038fcc2cb90fc3a4f391)
-        ;
-
-        
-    
-    
-            marker_91fb88d7e3cc79f86953d6d4af7c0802.bindTooltip(
-                `<div>
-                     Gipsformerei
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_8f7b1a271c0da2085cdc2da5d4314767 = L.marker(
-                [52.521, 13.396],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_86544fa5f31885e392db849c9294376f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_b7968e6130958c2e3540825cc57a6abb = $(`<div id=&quot;html_b7968e6130958c2e3540825cc57a6abb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157298' target='_blank'>Pergamon Museum</a></h3>         </div>`)[0];
-                popup_86544fa5f31885e392db849c9294376f.setContent(html_b7968e6130958c2e3540825cc57a6abb);
-            
-        
-
-        marker_8f7b1a271c0da2085cdc2da5d4314767.bindPopup(popup_86544fa5f31885e392db849c9294376f)
-        ;
-
-        
-    
-    
-            marker_8f7b1a271c0da2085cdc2da5d4314767.bindTooltip(
-                `<div>
-                     Pergamon Museum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_2aa15cab95fb133a8bc0eb18d68bc69e = L.marker(
-                [52.515833, 13.397222],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_773ddcfbd0a39d52665641ec13a29877 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_b3456eb2eca80a235e430243fe77eeab = $(`<div id=&quot;html_b3456eb2eca80a235e430243fe77eeab&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q833817' target='_blank'>Friedrichswerder Church</a></h3>         </div>`)[0];
-                popup_773ddcfbd0a39d52665641ec13a29877.setContent(html_b3456eb2eca80a235e430243fe77eeab);
-            
-        
-
-        marker_2aa15cab95fb133a8bc0eb18d68bc69e.bindPopup(popup_773ddcfbd0a39d52665641ec13a29877)
-        ;
-
-        
-    
-    
-            marker_2aa15cab95fb133a8bc0eb18d68bc69e.bindTooltip(
-                `<div>
-                     Friedrichswerder Church
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_e0bd9931e3c7a219c4713791ebcc86d8 = L.marker(
-                [52.5202, 13.3976],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_e6ab84263ac5d659c08464ad30fc1003 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_83f81f8d1754c0219fe7c45733a8083d = $(`<div id=&quot;html_83f81f8d1754c0219fe7c45733a8083d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157316' target='_blank'>Neues Museum</a></h3>         </div>`)[0];
-                popup_e6ab84263ac5d659c08464ad30fc1003.setContent(html_83f81f8d1754c0219fe7c45733a8083d);
-            
-        
-
-        marker_e0bd9931e3c7a219c4713791ebcc86d8.bindPopup(popup_e6ab84263ac5d659c08464ad30fc1003)
-        ;
-
-        
-    
-    
-            marker_e0bd9931e3c7a219c4713791ebcc86d8.bindTooltip(
-                `<div>
-                     Neues Museum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_a33d72ac8cc08f3aea44ee54fd42cb26 = L.marker(
+            var marker_74cd2b58590ce1113cb8ac77a0727d09 = L.marker(
                 [52.50861, 13.36666],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_4e3512fde0a14335ad9428e755a95fa0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_3b3af386a7b1c7ba5547f220fc4b4511 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_4a18b24379d25bcb173458c5d7ff5372 = $(`<div id=&quot;html_4a18b24379d25bcb173458c5d7ff5372&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q6445022' target='_blank'>Kunstbibliothek Berlin</a></h3>         </div>`)[0];
-                popup_4e3512fde0a14335ad9428e755a95fa0.setContent(html_4a18b24379d25bcb173458c5d7ff5372);
+                var html_a17ee0d77025ca7010e60455b9868f23 = $(`<div id=&quot;html_a17ee0d77025ca7010e60455b9868f23&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q6445022' target='_blank'>Kunstbibliothek - Staatliche Museen zu Berlin</a></h3>         Berlin</div>`)[0];
+                popup_3b3af386a7b1c7ba5547f220fc4b4511.setContent(html_a17ee0d77025ca7010e60455b9868f23);
             
         
 
-        marker_a33d72ac8cc08f3aea44ee54fd42cb26.bindPopup(popup_4e3512fde0a14335ad9428e755a95fa0)
+        marker_74cd2b58590ce1113cb8ac77a0727d09.bindPopup(popup_3b3af386a7b1c7ba5547f220fc4b4511)
         ;
 
         
     
     
-            marker_a33d72ac8cc08f3aea44ee54fd42cb26.bindTooltip(
+            marker_74cd2b58590ce1113cb8ac77a0727d09.bindTooltip(
                 `<div>
-                     Kunstbibliothek Berlin
+                     Kunstbibliothek - Staatliche Museen zu Berlin
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_3a221551f07a958443084066fe220476 = L.marker(
-                [52.52069444, 13.39680556],
+            var marker_59c4fa81ea307d732518ca6cf20da773 = L.marker(
+                [52.50861, 13.36666],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_543c4367f68bc2883edc8e39a6806b0e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_083e7dda0e564c2dd1130296a9ac232a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_2fae5aa3142b0185b43cf0311b43ca8b = $(`<div id=&quot;html_2fae5aa3142b0185b43cf0311b43ca8b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q542084' target='_blank'>Vorderasiatisches Museum Berlin</a></h3>         </div>`)[0];
-                popup_543c4367f68bc2883edc8e39a6806b0e.setContent(html_2fae5aa3142b0185b43cf0311b43ca8b);
+                var html_dc8518cc840ab946fa041d194044846c = $(`<div id=&quot;html_dc8518cc840ab946fa041d194044846c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q6445022' target='_blank'>Kunstbibliothek - Staatliche Museen zu Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_083e7dda0e564c2dd1130296a9ac232a.setContent(html_dc8518cc840ab946fa041d194044846c);
             
         
 
-        marker_3a221551f07a958443084066fe220476.bindPopup(popup_543c4367f68bc2883edc8e39a6806b0e)
+        marker_59c4fa81ea307d732518ca6cf20da773.bindPopup(popup_083e7dda0e564c2dd1130296a9ac232a)
         ;
 
         
     
     
-            marker_3a221551f07a958443084066fe220476.bindTooltip(
+            marker_59c4fa81ea307d732518ca6cf20da773.bindTooltip(
                 `<div>
-                     Vorderasiatisches Museum Berlin
+                     Kunstbibliothek - Staatliche Museen zu Berlin
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_383fd297d9e30c8df6674cb66a3a7060 = L.marker(
-                [52.519444444, 13.398888888],
+            var marker_8349c183ad49e614645515de648238a4 = L.marker(
+                [52.52203, 13.39399],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_4881563dea21a8b60e43537f1f0e6c7e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_d879f2102b5923a32b74462d37b9124c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_71f7a8dbf1d3bdf3a7b851c17efea854 = $(`<div id=&quot;html_71f7a8dbf1d3bdf3a7b851c17efea854&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q156722' target='_blank'>Altes Museum</a></h3>         </div>`)[0];
-                popup_4881563dea21a8b60e43537f1f0e6c7e.setContent(html_71f7a8dbf1d3bdf3a7b851c17efea854);
+                var html_891aad7b26592742835c3631c1e16140 = $(`<div id=&quot;html_891aad7b26592742835c3631c1e16140&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q323169' target='_blank'>Münzkabinett</a></h3>         Berlin</div>`)[0];
+                popup_d879f2102b5923a32b74462d37b9124c.setContent(html_891aad7b26592742835c3631c1e16140);
             
         
 
-        marker_383fd297d9e30c8df6674cb66a3a7060.bindPopup(popup_4881563dea21a8b60e43537f1f0e6c7e)
+        marker_8349c183ad49e614645515de648238a4.bindPopup(popup_d879f2102b5923a32b74462d37b9124c)
         ;
 
         
     
     
-            marker_383fd297d9e30c8df6674cb66a3a7060.bindTooltip(
+            marker_8349c183ad49e614645515de648238a4.bindTooltip(
                 `<div>
-                     Altes Museum
+                     Münzkabinett
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_8589e035a990400750ad6210303e2b2e = L.marker(
+            var marker_76fc77ccdbdaa706aab76f0fc3298ff6 = L.marker(
+                [52.528333333, 13.372222222],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_30bcef882ef11a435b04a43768cea067 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3232981e537299efecf3a63e530eabd7 = $(`<div id=&quot;html_3232981e537299efecf3a63e530eabd7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q584756' target='_blank'>Hamburger Bahnhof – Nationalgalerie der Gegenwart</a></h3>         Berlin</div>`)[0];
+                popup_30bcef882ef11a435b04a43768cea067.setContent(html_3232981e537299efecf3a63e530eabd7);
+            
+        
+
+        marker_76fc77ccdbdaa706aab76f0fc3298ff6.bindPopup(popup_30bcef882ef11a435b04a43768cea067)
+        ;
+
+        
+    
+    
+            marker_76fc77ccdbdaa706aab76f0fc3298ff6.bindTooltip(
+                `<div>
+                     Hamburger Bahnhof – Nationalgalerie der Gegenwart
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_e0ed5daf7c1aa67f339e001a67d7970f = L.marker(
                 [52.5194, 13.3983],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_e279ea40ef45c41e27a4f3828fa78656 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_338185358ee27d808e2ef918709ecc44 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_5024f11caa1a1897126a1d72fdf0ea70 = $(`<div id=&quot;html_5024f11caa1a1897126a1d72fdf0ea70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q475394' target='_blank'>Antikensammlung Berlin</a></h3>         </div>`)[0];
-                popup_e279ea40ef45c41e27a4f3828fa78656.setContent(html_5024f11caa1a1897126a1d72fdf0ea70);
+                var html_d62f16dc58507990c8efc6eedc6d77e7 = $(`<div id=&quot;html_d62f16dc58507990c8efc6eedc6d77e7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q475394' target='_blank'>Antikensammlung Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_338185358ee27d808e2ef918709ecc44.setContent(html_d62f16dc58507990c8efc6eedc6d77e7);
             
         
 
-        marker_8589e035a990400750ad6210303e2b2e.bindPopup(popup_e279ea40ef45c41e27a4f3828fa78656)
+        marker_e0ed5daf7c1aa67f339e001a67d7970f.bindPopup(popup_338185358ee27d808e2ef918709ecc44)
         ;
 
         
     
     
-            marker_8589e035a990400750ad6210303e2b2e.bindTooltip(
+            marker_e0ed5daf7c1aa67f339e001a67d7970f.bindTooltip(
                 `<div>
                      Antikensammlung Berlin
                  </div>`,
@@ -473,231 +335,260 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_da5665148406a9d586022af1ce942566 = L.marker(
-                [52.521944444, 13.394722222],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_38cd88f1065d4342a2afd112f43a909a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_1743de0edcef3eefd8b7e06e86691abd = $(`<div id=&quot;html_1743de0edcef3eefd8b7e06e86691abd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157825' target='_blank'>Bode Museum</a></h3>         </div>`)[0];
-                popup_38cd88f1065d4342a2afd112f43a909a.setContent(html_1743de0edcef3eefd8b7e06e86691abd);
-            
-        
-
-        marker_da5665148406a9d586022af1ce942566.bindPopup(popup_38cd88f1065d4342a2afd112f43a909a)
-        ;
-
-        
-    
-    
-            marker_da5665148406a9d586022af1ce942566.bindTooltip(
-                `<div>
-                     Bode Museum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_47f7512c258ff2a1b051e43cb3a1a4ef = L.marker(
-                [52.5084, 13.367],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_ca160d7dd589a10d3bffa539c1b4102d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_9317108690f8512666b1bd8c38c49e61 = $(`<div id=&quot;html_9317108690f8512666b1bd8c38c49e61&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555946' target='_blank'>Kupferstichkabinett Berlin</a></h3>         </div>`)[0];
-                popup_ca160d7dd589a10d3bffa539c1b4102d.setContent(html_9317108690f8512666b1bd8c38c49e61);
-            
-        
-
-        marker_47f7512c258ff2a1b051e43cb3a1a4ef.bindPopup(popup_ca160d7dd589a10d3bffa539c1b4102d)
-        ;
-
-        
-    
-    
-            marker_47f7512c258ff2a1b051e43cb3a1a4ef.bindTooltip(
-                `<div>
-                     Kupferstichkabinett Berlin
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_8ec563ddc75d369583000f3ad17c2640 = L.marker(
-                [52.508611111, 13.364722222],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_ade8ba19fe2bd7f3bbbba4ee066b9359 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_46835c6d91fd5ca56a0e04deda1d2970 = $(`<div id=&quot;html_46835c6d91fd5ca56a0e04deda1d2970&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q165631' target='_blank'>Gemäldegalerie</a></h3>         </div>`)[0];
-                popup_ade8ba19fe2bd7f3bbbba4ee066b9359.setContent(html_46835c6d91fd5ca56a0e04deda1d2970);
-            
-        
-
-        marker_8ec563ddc75d369583000f3ad17c2640.bindPopup(popup_ade8ba19fe2bd7f3bbbba4ee066b9359)
-        ;
-
-        
-    
-    
-            marker_8ec563ddc75d369583000f3ad17c2640.bindTooltip(
-                `<div>
-                     Gemäldegalerie
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_5487b7a833c0c2b6af455249cf86698e = L.marker(
+            var marker_6dac823ca238153e73093770e21412a0 = L.marker(
                 [52.5175, 13.402778055],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_954f801a5c1c6f86c628910c54ce8696 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_f566062cc519cf4bdb192600923dd656 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_69b88c8d89e166954954a252a147e4fd = $(`<div id=&quot;html_69b88c8d89e166954954a252a147e4fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q370045' target='_blank'>Museum of Asian Art</a></h3>         </div>`)[0];
-                popup_954f801a5c1c6f86c628910c54ce8696.setContent(html_69b88c8d89e166954954a252a147e4fd);
+                var html_3eba159de03095e74f37508dc8c5b41e = $(`<div id=&quot;html_3eba159de03095e74f37508dc8c5b41e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q370045' target='_blank'>Museum für Asiatische Kunst</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_f566062cc519cf4bdb192600923dd656.setContent(html_3eba159de03095e74f37508dc8c5b41e);
             
         
 
-        marker_5487b7a833c0c2b6af455249cf86698e.bindPopup(popup_954f801a5c1c6f86c628910c54ce8696)
+        marker_6dac823ca238153e73093770e21412a0.bindPopup(popup_f566062cc519cf4bdb192600923dd656)
         ;
 
         
     
     
-            marker_5487b7a833c0c2b6af455249cf86698e.bindTooltip(
+            marker_6dac823ca238153e73093770e21412a0.bindTooltip(
                 `<div>
-                     Museum of Asian Art
+                     Museum für Asiatische Kunst
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_35d21f2a038de4c568fc04fbc129bedc = L.marker(
+            var marker_2aae1c17d26caf70caf14cdaf398f7cc = L.marker(
                 [52.528333333, 13.372222222],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_7d5c50cd46e4187474b386e28a7c72c2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e1189ee8fe0e4e99f9f66b5972d73042 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_1caf812dfb31fe26f618517251b87d42 = $(`<div id=&quot;html_1caf812dfb31fe26f618517251b87d42&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q584756' target='_blank'>Hamburger Bahnhof</a></h3>         </div>`)[0];
-                popup_7d5c50cd46e4187474b386e28a7c72c2.setContent(html_1caf812dfb31fe26f618517251b87d42);
+                var html_8b0713fddd87a0e9c2bf7fc1f189a9a9 = $(`<div id=&quot;html_8b0713fddd87a0e9c2bf7fc1f189a9a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q584756' target='_blank'>Hamburger Bahnhof – Nationalgalerie der Gegenwart</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_e1189ee8fe0e4e99f9f66b5972d73042.setContent(html_8b0713fddd87a0e9c2bf7fc1f189a9a9);
             
         
 
-        marker_35d21f2a038de4c568fc04fbc129bedc.bindPopup(popup_7d5c50cd46e4187474b386e28a7c72c2)
+        marker_2aae1c17d26caf70caf14cdaf398f7cc.bindPopup(popup_e1189ee8fe0e4e99f9f66b5972d73042)
         ;
 
         
     
     
-            marker_35d21f2a038de4c568fc04fbc129bedc.bindTooltip(
+            marker_2aae1c17d26caf70caf14cdaf398f7cc.bindTooltip(
                 `<div>
-                     Hamburger Bahnhof
+                     Hamburger Bahnhof – Nationalgalerie der Gegenwart
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_d891a9babd388a1254d849586ca82ee9 = L.marker(
-                [52.5206, 13.3978],
+            var marker_077dc7813fc6f1171dd3c89930cd9170 = L.marker(
+                [52.515833, 13.397222],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_23d2408c42b26a83b592bf5eb5e57ce2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_878a419ee32a6a3f300a59432d44747a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_d3e1f97bc34ce9e449cb9c2682522b70 = $(`<div id=&quot;html_d3e1f97bc34ce9e449cb9c2682522b70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555019' target='_blank'>Museum for prehistory and early history</a></h3>         </div>`)[0];
-                popup_23d2408c42b26a83b592bf5eb5e57ce2.setContent(html_d3e1f97bc34ce9e449cb9c2682522b70);
+                var html_c93bac9aa60105196efad625754e3963 = $(`<div id=&quot;html_c93bac9aa60105196efad625754e3963&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q833817' target='_blank'>Friedrichswerdersche Kirche</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_878a419ee32a6a3f300a59432d44747a.setContent(html_c93bac9aa60105196efad625754e3963);
             
         
 
-        marker_d891a9babd388a1254d849586ca82ee9.bindPopup(popup_23d2408c42b26a83b592bf5eb5e57ce2)
+        marker_077dc7813fc6f1171dd3c89930cd9170.bindPopup(popup_878a419ee32a6a3f300a59432d44747a)
         ;
 
         
     
     
-            marker_d891a9babd388a1254d849586ca82ee9.bindTooltip(
+            marker_077dc7813fc6f1171dd3c89930cd9170.bindTooltip(
                 `<div>
-                     Museum for prehistory and early history
+                     Friedrichswerdersche Kirche
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_fe7816eed7bad4717ef3a064c7093c8e = L.marker(
-                [52.52138889, 13.39555556],
+            var marker_7062d8920cccf04e3d7aafee918972ea = L.marker(
+                [52.521944444, 13.394722222],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_3a8d5efe579c05463c1fe6b0e17e06dc = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_19be7ab98ebc2f8a9c0495ec6e3976b0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f1844c53c8f39838d6d1d401045f0b37 = $(`<div id=&quot;html_f1844c53c8f39838d6d1d401045f0b37&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q162610' target='_blank'>National Gallery Berlin</a></h3>         </div>`)[0];
-                popup_3a8d5efe579c05463c1fe6b0e17e06dc.setContent(html_f1844c53c8f39838d6d1d401045f0b37);
+                var html_461ab6f18dfb99e4f65ae16ff4ffd91b = $(`<div id=&quot;html_461ab6f18dfb99e4f65ae16ff4ffd91b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157825' target='_blank'>Bode-Museum</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_19be7ab98ebc2f8a9c0495ec6e3976b0.setContent(html_461ab6f18dfb99e4f65ae16ff4ffd91b);
             
         
 
-        marker_fe7816eed7bad4717ef3a064c7093c8e.bindPopup(popup_3a8d5efe579c05463c1fe6b0e17e06dc)
+        marker_7062d8920cccf04e3d7aafee918972ea.bindPopup(popup_19be7ab98ebc2f8a9c0495ec6e3976b0)
         ;
 
         
     
     
-            marker_fe7816eed7bad4717ef3a064c7093c8e.bindTooltip(
+            marker_7062d8920cccf04e3d7aafee918972ea.bindTooltip(
                 `<div>
-                     National Gallery Berlin
+                     Bode-Museum
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_2f22fcb14be67d3111907cc2ffdab5b2 = L.marker(
+            var marker_fd4bcc87f3d589659ad94aaa58625294 = L.marker(
+                [52.5192, 13.2867],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_c5456bddfd2392c938e57eef8cd18223 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_7779ee3f3d39e09ab86d036f7f62f2bd = $(`<div id=&quot;html_7779ee3f3d39e09ab86d036f7f62f2bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1526549' target='_blank'>Gipsformerei</a></h3>         Berlin</div>`)[0];
+                popup_c5456bddfd2392c938e57eef8cd18223.setContent(html_7779ee3f3d39e09ab86d036f7f62f2bd);
+            
+        
+
+        marker_fd4bcc87f3d589659ad94aaa58625294.bindPopup(popup_c5456bddfd2392c938e57eef8cd18223)
+        ;
+
+        
+    
+    
+            marker_fd4bcc87f3d589659ad94aaa58625294.bindTooltip(
+                `<div>
+                     Gipsformerei
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_6f1c201f4cd9974fca1324fa8f559295 = L.marker(
+                [52.520238888, 13.397741666],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_5ac21d72ea6367b591f6919397678fb3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_92afb2288ef679db3bbec90cfee20852 = $(`<div id=&quot;html_92afb2288ef679db3bbec90cfee20852&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q254156' target='_blank'>Ägyptisches Museum Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_5ac21d72ea6367b591f6919397678fb3.setContent(html_92afb2288ef679db3bbec90cfee20852);
+            
+        
+
+        marker_6f1c201f4cd9974fca1324fa8f559295.bindPopup(popup_5ac21d72ea6367b591f6919397678fb3)
+        ;
+
+        
+    
+    
+            marker_6f1c201f4cd9974fca1324fa8f559295.bindTooltip(
+                `<div>
+                     Ägyptisches Museum Berlin
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_94ce89c7c20c16e367461e8adc7b26e7 = L.marker(
+                [52.5191, 13.2967],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_0d2e43c673c50e62fc3bd572caeaf50b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_cbb140834efda19f0ceb698e33dda1df = $(`<div id=&quot;html_cbb140834efda19f0ceb698e33dda1df&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q322010' target='_blank'>Sammlung Scharf-Gerstenberg</a></h3>         Berlin</div>`)[0];
+                popup_0d2e43c673c50e62fc3bd572caeaf50b.setContent(html_cbb140834efda19f0ceb698e33dda1df);
+            
+        
+
+        marker_94ce89c7c20c16e367461e8adc7b26e7.bindPopup(popup_0d2e43c673c50e62fc3bd572caeaf50b)
+        ;
+
+        
+    
+    
+            marker_94ce89c7c20c16e367461e8adc7b26e7.bindTooltip(
+                `<div>
+                     Sammlung Scharf-Gerstenberg
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_a2ed4cb7bc7432419416e189c7fa6ed2 = L.marker(
+                [52.4558, 13.2928],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_f28a66a1e73218c835e4bc20bb1243e3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3659aa341fffa8bce723ddb47d517fa1 = $(`<div id=&quot;html_3659aa341fffa8bce723ddb47d517fa1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q318174' target='_blank'>Museum Europäischer Kulturen</a></h3>         Steglitz-Zehlendorf</div>`)[0];
+                popup_f28a66a1e73218c835e4bc20bb1243e3.setContent(html_3659aa341fffa8bce723ddb47d517fa1);
+            
+        
+
+        marker_a2ed4cb7bc7432419416e189c7fa6ed2.bindPopup(popup_f28a66a1e73218c835e4bc20bb1243e3)
+        ;
+
+        
+    
+    
+            marker_a2ed4cb7bc7432419416e189c7fa6ed2.bindTooltip(
+                `<div>
+                     Museum Europäischer Kulturen
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_510f8c82e2f2dc4c8dc578545c369413 = L.marker(
                 [52.506944444, 13.367777777],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_582ea6a72161f7d21aa59c9c4bf2cef3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4f0ac8c9ea69674eda3fd2f5a30ae259 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_17c1372633bcef643b822173f8db1e80 = $(`<div id=&quot;html_17c1372633bcef643b822173f8db1e80&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q32659772' target='_blank'>Neue Nationalgalerie</a></h3>         </div>`)[0];
-                popup_582ea6a72161f7d21aa59c9c4bf2cef3.setContent(html_17c1372633bcef643b822173f8db1e80);
+                var html_6642d5d6e4f2ba66f18afe4d1e8c1982 = $(`<div id=&quot;html_6642d5d6e4f2ba66f18afe4d1e8c1982&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q32659772' target='_blank'>Neue Nationalgalerie</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_4f0ac8c9ea69674eda3fd2f5a30ae259.setContent(html_6642d5d6e4f2ba66f18afe4d1e8c1982);
             
         
 
-        marker_2f22fcb14be67d3111907cc2ffdab5b2.bindPopup(popup_582ea6a72161f7d21aa59c9c4bf2cef3)
+        marker_510f8c82e2f2dc4c8dc578545c369413.bindPopup(popup_4f0ac8c9ea69674eda3fd2f5a30ae259)
         ;
 
         
     
     
-            marker_2f22fcb14be67d3111907cc2ffdab5b2.bindTooltip(
+            marker_510f8c82e2f2dc4c8dc578545c369413.bindTooltip(
                 `<div>
                      Neue Nationalgalerie
                  </div>`,
@@ -705,239 +596,625 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_bb558a97691308046857186d47e2bf1d = L.marker(
-                [52.5175, 13.402778055],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_2aadf0fb5214c88c187fc151795196d2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_1fc486686d85457fcf59bc064c9aa5d3 = $(`<div id=&quot;html_1fc486686d85457fcf59bc064c9aa5d3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q688353' target='_blank'>Ethnological Museum Berlin</a></h3>         </div>`)[0];
-                popup_2aadf0fb5214c88c187fc151795196d2.setContent(html_1fc486686d85457fcf59bc064c9aa5d3);
-            
-        
-
-        marker_bb558a97691308046857186d47e2bf1d.bindPopup(popup_2aadf0fb5214c88c187fc151795196d2)
-        ;
-
-        
-    
-    
-            marker_bb558a97691308046857186d47e2bf1d.bindTooltip(
-                `<div>
-                     Ethnological Museum Berlin
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_62b0f010b7324f6da564668f7a18245b = L.marker(
-                [52.5192, 13.2953],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_c60ce6cf715b4807eb412fb78d83c7f8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_fd1c901f8ddcfef70f2599941c68260e = $(`<div id=&quot;html_fd1c901f8ddcfef70f2599941c68260e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q641630' target='_blank'>Berggruen Museum</a></h3>         </div>`)[0];
-                popup_c60ce6cf715b4807eb412fb78d83c7f8.setContent(html_fd1c901f8ddcfef70f2599941c68260e);
-            
-        
-
-        marker_62b0f010b7324f6da564668f7a18245b.bindPopup(popup_c60ce6cf715b4807eb412fb78d83c7f8)
-        ;
-
-        
-    
-    
-            marker_62b0f010b7324f6da564668f7a18245b.bindTooltip(
-                `<div>
-                     Berggruen Museum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_d8e8c8c74badabf0079df75dbda45aab = L.marker(
-                [52.5191, 13.2967],
-                {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
-        
-    
-        var popup_225f0af37b20c4b48068e61610f9ea3a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_fe9616ed91cfe51742779534620af4c6 = $(`<div id=&quot;html_fe9616ed91cfe51742779534620af4c6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q322010' target='_blank'>Scharf-Gerstenberg Collection</a></h3>         </div>`)[0];
-                popup_225f0af37b20c4b48068e61610f9ea3a.setContent(html_fe9616ed91cfe51742779534620af4c6);
-            
-        
-
-        marker_d8e8c8c74badabf0079df75dbda45aab.bindPopup(popup_225f0af37b20c4b48068e61610f9ea3a)
-        ;
-
-        
-    
-    
-            marker_d8e8c8c74badabf0079df75dbda45aab.bindTooltip(
-                `<div>
-                     Scharf-Gerstenberg Collection
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_078feeeb6a83c818f899750366457457 = L.marker(
+            var marker_d482424e401f95b10d25bc29ab9b3932 = L.marker(
                 [52.5081395, 13.3320739],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_43aee59bad623c936a8bd78c20ba47ff = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_a04d24577337b5cc5f32c7be59b9a5dd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_a1ebff033ebea4a2402e46a96be283d9 = $(`<div id=&quot;html_a1ebff033ebea4a2402e46a96be283d9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q564747' target='_blank'>Museum of Photography</a></h3>         </div>`)[0];
-                popup_43aee59bad623c936a8bd78c20ba47ff.setContent(html_a1ebff033ebea4a2402e46a96be283d9);
+                var html_7e65882e4fbbe338cbfce6056c09f042 = $(`<div id=&quot;html_7e65882e4fbbe338cbfce6056c09f042&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q564747' target='_blank'>Museum für Fotografie</a></h3>         Berlin</div>`)[0];
+                popup_a04d24577337b5cc5f32c7be59b9a5dd.setContent(html_7e65882e4fbbe338cbfce6056c09f042);
             
         
 
-        marker_078feeeb6a83c818f899750366457457.bindPopup(popup_43aee59bad623c936a8bd78c20ba47ff)
+        marker_d482424e401f95b10d25bc29ab9b3932.bindPopup(popup_a04d24577337b5cc5f32c7be59b9a5dd)
         ;
 
         
     
     
-            marker_078feeeb6a83c818f899750366457457.bindTooltip(
+            marker_d482424e401f95b10d25bc29ab9b3932.bindTooltip(
                 `<div>
-                     Museum of Photography
+                     Museum für Fotografie
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_ff9aa4fa1e931d12a55f681b7f29cb7a = L.marker(
-                [52.4558, 13.2928],
+            var marker_053c90ced052ac1fded3dfe81715ef7d = L.marker(
+                [52.52138889, 13.39555556],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_dfd44a162d785c139a6fb4674b9879c7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_9f8fe69031fd9cc7a478726eedadb648 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_1a86ff35db05d6355e016f44d29c49a9 = $(`<div id=&quot;html_1a86ff35db05d6355e016f44d29c49a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q318174' target='_blank'>Museum of European Cultures</a></h3>         </div>`)[0];
-                popup_dfd44a162d785c139a6fb4674b9879c7.setContent(html_1a86ff35db05d6355e016f44d29c49a9);
+                var html_e908c15d1ab6b386b7647d6bcc8e91cd = $(`<div id=&quot;html_e908c15d1ab6b386b7647d6bcc8e91cd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q162610' target='_blank'>Nationalgalerie Berlin</a></h3>         Berlin</div>`)[0];
+                popup_9f8fe69031fd9cc7a478726eedadb648.setContent(html_e908c15d1ab6b386b7647d6bcc8e91cd);
             
         
 
-        marker_ff9aa4fa1e931d12a55f681b7f29cb7a.bindPopup(popup_dfd44a162d785c139a6fb4674b9879c7)
+        marker_053c90ced052ac1fded3dfe81715ef7d.bindPopup(popup_9f8fe69031fd9cc7a478726eedadb648)
         ;
 
         
     
     
-            marker_ff9aa4fa1e931d12a55f681b7f29cb7a.bindTooltip(
+            marker_053c90ced052ac1fded3dfe81715ef7d.bindTooltip(
                 `<div>
-                     Museum of European Cultures
+                     Nationalgalerie Berlin
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_2a3eadfd78a4c4320892580c22026893 = L.marker(
-                [52.5208, 13.3964],
+            var marker_b3d233a5133a52f4640efde12872ae68 = L.marker(
+                [52.521, 13.396],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_28e562b84750365570c07899d362d4c9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_6d4542759ff6f46b5a63d01c41165184 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_997db4ae14b86746fa44f4c8f6e5daae = $(`<div id=&quot;html_997db4ae14b86746fa44f4c8f6e5daae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1954632' target='_blank'>Museum of Islamic Art</a></h3>         </div>`)[0];
-                popup_28e562b84750365570c07899d362d4c9.setContent(html_997db4ae14b86746fa44f4c8f6e5daae);
+                var html_519d0cfb1db652c16212e8f9aac50d40 = $(`<div id=&quot;html_519d0cfb1db652c16212e8f9aac50d40&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157298' target='_blank'>Pergamonmuseum</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_6d4542759ff6f46b5a63d01c41165184.setContent(html_519d0cfb1db652c16212e8f9aac50d40);
             
         
 
-        marker_2a3eadfd78a4c4320892580c22026893.bindPopup(popup_28e562b84750365570c07899d362d4c9)
+        marker_b3d233a5133a52f4640efde12872ae68.bindPopup(popup_6d4542759ff6f46b5a63d01c41165184)
         ;
 
         
     
     
-            marker_2a3eadfd78a4c4320892580c22026893.bindTooltip(
+            marker_b3d233a5133a52f4640efde12872ae68.bindTooltip(
                 `<div>
-                     Museum of Islamic Art
+                     Pergamonmuseum
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_7413b73e580169003ee33904c38e769c = L.marker(
-                [52.520238888, 13.397741666],
+            var marker_8f77ed09150565b852dcaef3ede71054 = L.marker(
+                [52.5084, 13.367],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_9e04ba56300632a0507b7d146861d881 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_6c278ed1d73d81411264e3bfc4ad97f2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_310c0f31234589a2004e761ed3156355 = $(`<div id=&quot;html_310c0f31234589a2004e761ed3156355&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q254156' target='_blank'>Egyptian Museum of Berlin</a></h3>         </div>`)[0];
-                popup_9e04ba56300632a0507b7d146861d881.setContent(html_310c0f31234589a2004e761ed3156355);
+                var html_3b5b1b9190ef184993d67575b8d6ffaf = $(`<div id=&quot;html_3b5b1b9190ef184993d67575b8d6ffaf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555946' target='_blank'>Kupferstichkabinett Berlin</a></h3>         Berlin</div>`)[0];
+                popup_6c278ed1d73d81411264e3bfc4ad97f2.setContent(html_3b5b1b9190ef184993d67575b8d6ffaf);
             
         
 
-        marker_7413b73e580169003ee33904c38e769c.bindPopup(popup_9e04ba56300632a0507b7d146861d881)
+        marker_8f77ed09150565b852dcaef3ede71054.bindPopup(popup_6c278ed1d73d81411264e3bfc4ad97f2)
         ;
 
         
     
     
-            marker_7413b73e580169003ee33904c38e769c.bindTooltip(
+            marker_8f77ed09150565b852dcaef3ede71054.bindTooltip(
                 `<div>
-                     Egyptian Museum of Berlin
+                     Kupferstichkabinett Berlin
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_9653fd56897acdd92f8ea6940e3e19df = L.marker(
+            var marker_bd5052f47825aa7755f814c680789fb8 = L.marker(
+                [52.52069444, 13.39680556],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_0d3d29ad9f95a2786e4308856a86f354 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c7882eb0a044f1d942f7ea25a3e6ca74 = $(`<div id=&quot;html_c7882eb0a044f1d942f7ea25a3e6ca74&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q542084' target='_blank'>Vorderasiatisches Museum Berlin</a></h3>         Berlin</div>`)[0];
+                popup_0d3d29ad9f95a2786e4308856a86f354.setContent(html_c7882eb0a044f1d942f7ea25a3e6ca74);
+            
+        
+
+        marker_bd5052f47825aa7755f814c680789fb8.bindPopup(popup_0d3d29ad9f95a2786e4308856a86f354)
+        ;
+
+        
+    
+    
+            marker_bd5052f47825aa7755f814c680789fb8.bindTooltip(
+                `<div>
+                     Vorderasiatisches Museum Berlin
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_821237d0acee4c010b297c6c129940f9 = L.marker(
+                [52.5206, 13.3978],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_f976754d77d8a7d3c126db7b694428d1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_409d0763399311c460bb7eddd4a6046e = $(`<div id=&quot;html_409d0763399311c460bb7eddd4a6046e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q555019' target='_blank'>Museum für Vor- und Frühgeschichte Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_f976754d77d8a7d3c126db7b694428d1.setContent(html_409d0763399311c460bb7eddd4a6046e);
+            
+        
+
+        marker_821237d0acee4c010b297c6c129940f9.bindPopup(popup_f976754d77d8a7d3c126db7b694428d1)
+        ;
+
+        
+    
+    
+            marker_821237d0acee4c010b297c6c129940f9.bindTooltip(
+                `<div>
+                     Museum für Vor- und Frühgeschichte Berlin
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_c5ddbcfc09df14c7f2da919aeb261381 = L.marker(
+                [52.5192, 13.2953],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_d9d5cc06e40d944db78a218eaf7fb660 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_67ba99bbce26d8f96e70baee6f2dc327 = $(`<div id=&quot;html_67ba99bbce26d8f96e70baee6f2dc327&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q641630' target='_blank'>Museum Berggruen</a></h3>         Charlottenburg-Wilmersdorf</div>`)[0];
+                popup_d9d5cc06e40d944db78a218eaf7fb660.setContent(html_67ba99bbce26d8f96e70baee6f2dc327);
+            
+        
+
+        marker_c5ddbcfc09df14c7f2da919aeb261381.bindPopup(popup_d9d5cc06e40d944db78a218eaf7fb660)
+        ;
+
+        
+    
+    
+            marker_c5ddbcfc09df14c7f2da919aeb261381.bindTooltip(
+                `<div>
+                     Museum Berggruen
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_5d2be8d67c6b9518522fb229e72ea640 = L.marker(
                 [52.5097, 13.3675],
                 {}
-            ).addTo(map_0164d09571f1b2cea379a47a66577f2e);
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
         
     
-        var popup_2b9a6334e343fd47e9e194769a6d9569 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_a324ede600fdb257fc9230f7605ad051 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_64127880256b1f0071ea77a59514dc64 = $(`<div id=&quot;html_64127880256b1f0071ea77a59514dc64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q477503' target='_blank'>Museum of Decorative Arts</a></h3>         </div>`)[0];
-                popup_2b9a6334e343fd47e9e194769a6d9569.setContent(html_64127880256b1f0071ea77a59514dc64);
+                var html_570005cc77e1f4807f8dbe40bb811f44 = $(`<div id=&quot;html_570005cc77e1f4807f8dbe40bb811f44&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q477503' target='_blank'>Kunstgewerbemuseum Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_a324ede600fdb257fc9230f7605ad051.setContent(html_570005cc77e1f4807f8dbe40bb811f44);
             
         
 
-        marker_9653fd56897acdd92f8ea6940e3e19df.bindPopup(popup_2b9a6334e343fd47e9e194769a6d9569)
+        marker_5d2be8d67c6b9518522fb229e72ea640.bindPopup(popup_a324ede600fdb257fc9230f7605ad051)
         ;
 
         
     
     
-            marker_9653fd56897acdd92f8ea6940e3e19df.bindTooltip(
+            marker_5d2be8d67c6b9518522fb229e72ea640.bindTooltip(
                 `<div>
-                     Museum of Decorative Arts
+                     Kunstgewerbemuseum Berlin
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_3a80c59bbb6f3917adf2e047fa0ab4ea = L.marker(
+                [52.5175, 13.402778055],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_89c724f80f7ebe85d810803bc55c921f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4ed72ae3cd33e4f7f36cc65b1b7ab8ed = $(`<div id=&quot;html_4ed72ae3cd33e4f7f36cc65b1b7ab8ed&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q688353' target='_blank'>Ethnologisches Museum Berlin</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_89c724f80f7ebe85d810803bc55c921f.setContent(html_4ed72ae3cd33e4f7f36cc65b1b7ab8ed);
+            
+        
+
+        marker_3a80c59bbb6f3917adf2e047fa0ab4ea.bindPopup(popup_89c724f80f7ebe85d810803bc55c921f)
+        ;
+
+        
+    
+    
+            marker_3a80c59bbb6f3917adf2e047fa0ab4ea.bindTooltip(
+                `<div>
+                     Ethnologisches Museum Berlin
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_bfbc44add7e869aa1386b94d209798da = L.marker(
+                [52.508611111, 13.364722222],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_314fd991c9f5285f52a8adf82191e151 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_e433fd29c8c2492d92dd31a91946c6e3 = $(`<div id=&quot;html_e433fd29c8c2492d92dd31a91946c6e3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q165631' target='_blank'>Gemäldegalerie</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_314fd991c9f5285f52a8adf82191e151.setContent(html_e433fd29c8c2492d92dd31a91946c6e3);
+            
+        
+
+        marker_bfbc44add7e869aa1386b94d209798da.bindPopup(popup_314fd991c9f5285f52a8adf82191e151)
+        ;
+
+        
+    
+    
+            marker_bfbc44add7e869aa1386b94d209798da.bindTooltip(
+                `<div>
+                     Gemäldegalerie
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_9f5ce8d74b830955e90ef9f74f6264ab = L.marker(
+                [52.5202, 13.3976],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_b863ae347e3dde7ca9a9a593a3a69cea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_19765d4449c744b162b963fc5d4e8f89 = $(`<div id=&quot;html_19765d4449c744b162b963fc5d4e8f89&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q157316' target='_blank'>Neues Museum</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_b863ae347e3dde7ca9a9a593a3a69cea.setContent(html_19765d4449c744b162b963fc5d4e8f89);
+            
+        
+
+        marker_9f5ce8d74b830955e90ef9f74f6264ab.bindPopup(popup_b863ae347e3dde7ca9a9a593a3a69cea)
+        ;
+
+        
+    
+    
+            marker_9f5ce8d74b830955e90ef9f74f6264ab.bindTooltip(
+                `<div>
+                     Neues Museum
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_7a55af2c88dbda33807a0cdc6f8b37a5 = L.marker(
+                [52.52163, 13.39499],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_1152a5bcd4bfbc0c51dd1d7eed854330 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a5c3720dabb6228b645fdc84841f1f69 = $(`<div id=&quot;html_a5c3720dabb6228b645fdc84841f1f69&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1650436' target='_blank'>Skulpturensammlung und Museum für Byzantinische Kunst</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_1152a5bcd4bfbc0c51dd1d7eed854330.setContent(html_a5c3720dabb6228b645fdc84841f1f69);
+            
+        
+
+        marker_7a55af2c88dbda33807a0cdc6f8b37a5.bindPopup(popup_1152a5bcd4bfbc0c51dd1d7eed854330)
+        ;
+
+        
+    
+    
+            marker_7a55af2c88dbda33807a0cdc6f8b37a5.bindTooltip(
+                `<div>
+                     Skulpturensammlung und Museum für Byzantinische Kunst
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_3c2445b02e8c39e19666c699d01da606 = L.marker(
+                [52.5208, 13.3964],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_662a332a594bc6df7cda1502fb27eb05 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fb2cd2e62cbb455dd33687dee000fcb7 = $(`<div id=&quot;html_fb2cd2e62cbb455dd33687dee000fcb7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1954632' target='_blank'>Museum für Islamische Kunst</a></h3>         Berlin</div>`)[0];
+                popup_662a332a594bc6df7cda1502fb27eb05.setContent(html_fb2cd2e62cbb455dd33687dee000fcb7);
+            
+        
+
+        marker_3c2445b02e8c39e19666c699d01da606.bindPopup(popup_662a332a594bc6df7cda1502fb27eb05)
+        ;
+
+        
+    
+    
+            marker_3c2445b02e8c39e19666c699d01da606.bindTooltip(
+                `<div>
+                     Museum für Islamische Kunst
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_749e86e9c1301d04786649d3dd8c4c74 = L.marker(
+                [52.519444444, 13.398888888],
+                {}
+            ).addTo(map_4b8aa938b448e77a0357d9c3bf3d9c25);
+        
+    
+        var popup_e91fe544773e9b18ada435be04687928 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ee481793586da57b512e0e8ccbe4de1d = $(`<div id=&quot;html_ee481793586da57b512e0e8ccbe4de1d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q156722' target='_blank'>Altes Museum</a></h3>         Bezirk Mitte von Berlin</div>`)[0];
+                popup_e91fe544773e9b18ada435be04687928.setContent(html_ee481793586da57b512e0e8ccbe4de1d);
+            
+        
+
+        marker_749e86e9c1301d04786649d3dd8c4c74.bindPopup(popup_e91fe544773e9b18ada435be04687928)
+        ;
+
+        
+    
+    
+            marker_749e86e9c1301d04786649d3dd8c4c74.bindTooltip(
+                `<div>
+                     Altes Museum
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+      <br>
+      <table class="table" id="mapTable">
+      <thead>
+      <tr>
+      <th><b onclick="sortTable(0)" style="color: #56cc9d; cursor:pointer">⭿</b> Name</th>
+      <th style="width:20%"><b onclick="sortTable(1)" style="color: #56cc9d; cursor:pointer">⭿</b> Koordinaten</th>
+      <th><b onclick="sortTable(2)" style="color: #56cc9d; cursor:pointer">⭿</b> Ort</th>
+      </tr>
+      </thead>
+      <tbody>
+  <tr>
+  <td><span style="display:none">Museum für Ostasiatische Kunst</span><a href="http://www.wikidata.org/entity/Q56605294">Museum für Ostasiatische Kunst</a></td>
+  <td></td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Kunstbibliothek - Staatliche Museen zu Berlin</span><a href="http://www.wikidata.org/entity/Q6445022">Kunstbibliothek - Staatliche Museen zu Berlin</a></td>
+  <td>52.50861,<br> 13.36666</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Kunstbibliothek - Staatliche Museen zu Berlin</span><a href="http://www.wikidata.org/entity/Q6445022">Kunstbibliothek - Staatliche Museen zu Berlin</a></td>
+  <td>52.50861,<br> 13.36666</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Münzkabinett</span><a href="http://www.wikidata.org/entity/Q323169">Münzkabinett</a></td>
+  <td>52.52203,<br> 13.39399</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Hamburger Bahnhof – Nationalgalerie der Gegenwart</span><a href="http://www.wikidata.org/entity/Q584756">Hamburger Bahnhof – Nationalgalerie der Gegenwart</a></td>
+  <td>52.528333333,<br> 13.372222222</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Antikensammlung Berlin</span><a href="http://www.wikidata.org/entity/Q475394">Antikensammlung Berlin</a></td>
+  <td>52.5194,<br> 13.3983</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum für Asiatische Kunst</span><a href="http://www.wikidata.org/entity/Q370045">Museum für Asiatische Kunst</a></td>
+  <td>52.5175,<br> 13.402778055</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Hamburger Bahnhof – Nationalgalerie der Gegenwart</span><a href="http://www.wikidata.org/entity/Q584756">Hamburger Bahnhof – Nationalgalerie der Gegenwart</a></td>
+  <td>52.528333333,<br> 13.372222222</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Friedrichswerdersche Kirche</span><a href="http://www.wikidata.org/entity/Q833817">Friedrichswerdersche Kirche</a></td>
+  <td>52.515833,<br> 13.397222</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Bode-Museum</span><a href="http://www.wikidata.org/entity/Q157825">Bode-Museum</a></td>
+  <td>52.521944444,<br> 13.394722222</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Gipsformerei</span><a href="http://www.wikidata.org/entity/Q1526549">Gipsformerei</a></td>
+  <td>52.5192,<br> 13.2867</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Ägyptisches Museum Berlin</span><a href="http://www.wikidata.org/entity/Q254156">Ägyptisches Museum Berlin</a></td>
+  <td>52.520238888,<br> 13.397741666</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Sammlung Scharf-Gerstenberg</span><a href="http://www.wikidata.org/entity/Q322010">Sammlung Scharf-Gerstenberg</a></td>
+  <td>52.5191,<br> 13.2967</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum Europäischer Kulturen</span><a href="http://www.wikidata.org/entity/Q318174">Museum Europäischer Kulturen</a></td>
+  <td>52.4558,<br> 13.2928</td>
+  <td>Steglitz-Zehlendorf</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Neue Nationalgalerie</span><a href="http://www.wikidata.org/entity/Q32659772">Neue Nationalgalerie</a></td>
+  <td>52.506944444,<br> 13.367777777</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum für Fotografie</span><a href="http://www.wikidata.org/entity/Q564747">Museum für Fotografie</a></td>
+  <td>52.5081395,<br> 13.3320739</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Nationalgalerie Berlin</span><a href="http://www.wikidata.org/entity/Q162610">Nationalgalerie Berlin</a></td>
+  <td>52.52138889,<br> 13.39555556</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Pergamonmuseum</span><a href="http://www.wikidata.org/entity/Q157298">Pergamonmuseum</a></td>
+  <td>52.521,<br> 13.396</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Kupferstichkabinett Berlin</span><a href="http://www.wikidata.org/entity/Q555946">Kupferstichkabinett Berlin</a></td>
+  <td>52.5084,<br> 13.367</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Vorderasiatisches Museum Berlin</span><a href="http://www.wikidata.org/entity/Q542084">Vorderasiatisches Museum Berlin</a></td>
+  <td>52.52069444,<br> 13.39680556</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum für Vor- und Frühgeschichte Berlin</span><a href="http://www.wikidata.org/entity/Q555019">Museum für Vor- und Frühgeschichte Berlin</a></td>
+  <td>52.5206,<br> 13.3978</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum Berggruen</span><a href="http://www.wikidata.org/entity/Q641630">Museum Berggruen</a></td>
+  <td>52.5192,<br> 13.2953</td>
+  <td>Charlottenburg-Wilmersdorf</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Kunstgewerbemuseum Berlin</span><a href="http://www.wikidata.org/entity/Q477503">Kunstgewerbemuseum Berlin</a></td>
+  <td>52.5097,<br> 13.3675</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Ethnologisches Museum Berlin</span><a href="http://www.wikidata.org/entity/Q688353">Ethnologisches Museum Berlin</a></td>
+  <td>52.5175,<br> 13.402778055</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Gemäldegalerie</span><a href="http://www.wikidata.org/entity/Q165631">Gemäldegalerie</a></td>
+  <td>52.508611111,<br> 13.364722222</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Neues Museum</span><a href="http://www.wikidata.org/entity/Q157316">Neues Museum</a></td>
+  <td>52.5202,<br> 13.3976</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Skulpturensammlung und Museum für Byzantinische Kunst</span><a href="http://www.wikidata.org/entity/Q1650436">Skulpturensammlung und Museum für Byzantinische Kunst</a></td>
+  <td>52.52163,<br> 13.39499</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Museum für Islamische Kunst</span><a href="http://www.wikidata.org/entity/Q1954632">Museum für Islamische Kunst</a></td>
+  <td>52.5208,<br> 13.3964</td>
+  <td>Berlin</td>
+  </tr>
+  <tr>
+  <td><span style="display:none">Altes Museum</span><a href="http://www.wikidata.org/entity/Q156722">Altes Museum</a></td>
+  <td>52.519444444,<br> 13.398888888</td>
+  <td>Bezirk Mitte von Berlin</td>
+  </tr>
+</tbody></table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("mapTable");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
 
 
 
